@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.danielrichardson.a2kewl4skewl">
+
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Database Provider -->
+        <provider
+            android:name="com.danielrichardson.a2kewl4skewl.database.DataProvider"
+            android:authorities="com.danielrichardson.a2kewl4skewl.dataprovider"
+            android:exported="false" />
+
+        <!-- Alarm Provider -->
+        <receiver android:name="com.danielrichardson.a2kewl4skewl.utilities.AlarmHandler" />
+
+        <!-- Activities -->
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_term.TermListActivity"
+            android:label="@string/view_degree_plan"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_term.TermViewerActivity"
+            android:label="@string/term_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_term.TermListActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_term.TermEditorActivity"
+            android:label="@string/term_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_term.TermViewerActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_course.CourseListActivity"
+            android:label="@string/course_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_term.TermViewerActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_course.CourseViewerActivity"
+            android:label="@string/course_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_course.CourseListActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_course.CourseEditorActivity"
+            android:label="@string/course_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_course.CourseViewerActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_course.CourseNoteListActivity"
+            android:label="@string/course_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_course.CourseViewerActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentListActivity"
+            android:label="@string/assessment_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_course.CourseViewerActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentViewerActivity"
+            android:label="@string/assessment_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentListActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_course.CourseNoteViewerActivity"
+            android:label="@string/course_note_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_course.CourseNoteListActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentNoteListActivity"
+            android:label="@string/assessment_note_list"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentViewerActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentNoteViewerActivity"
+            android:label="@string/assessment_note_viewer"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentNoteListActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentEditorActivity"
+            android:label="@string/assessment_editor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentViewerActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_course.CourseNoteEditorActivity"
+            android:label="@string/course_note_editor"
+            android:parentActivityName="com.danielrichardson.a2kewl4skewl.activities_course.CourseNoteListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_course.CourseNoteListActivity" />
+        </activity>
+        <activity
+            android:name="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentNoteEditorActivity"
+            android:label="@string/assessment_note_editor"
+            android:parentActivityName="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentNoteListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.danielrichardson.a2kewl4skewl.activities_assessment.AssessmentNoteListActivity" />
+        </activity>
+    </application>
+
+</manifest>

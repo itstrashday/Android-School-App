@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingTop="@dimen/vertical_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingBottom="@dimen/vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.danielrichardson.a2kewl4skewl.activities_course.CourseViewerActivity"
+    tools:showIn="@layout/activity_course_viewer">
+
+    <TextView
+        android:id="@+id/tvCourseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Course Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvCourseStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCourseName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Start Date" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCourseName"
+        android:layout_toEndOf="@+id/tvCourseStart"
+        android:layout_toRightOf="@+id/tvCourseStart"
+        android:text=" - " />
+
+    <TextView
+        android:id="@+id/tvCourseEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCourseName"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:text="End Date" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCourseStart"
+        android:text="Planned" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="134dp"
+            android:layout_height="125dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="openClassNotesList"
+            android:padding="18dp"
+            android:elevation="@dimen/default_elevation"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_script_text" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="8dp"
+            android:onClick="openClassNotesList"
+            android:text="@string/notes"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:layout_width="133dp"
+            android:layout_height="124dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="openAssessments"
+            android:padding="18dp"
+            android:scaleType="fitXY"
+            android:elevation="@dimen/default_elevation"
+            android:src="@drawable/ic_chair_school" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="8dp"
+            android:onClick="openAssessments"
+            android:text="Assessments"
+            android:textSize="16sp" />
+    </GridLayout>
+
+</RelativeLayout>

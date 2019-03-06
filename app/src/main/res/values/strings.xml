@@ -1,0 +1,92 @@
+<resources>
+    <!--App Strings-->
+    <string name="app_name">2 Kewl 4 Skewl</string>
+    <string name="title_activity_main">2 Kewl 4 Skewl</string>
+
+    <!--Terms Strings-->
+    <string name="view_degree_plan">Degree Plan</string>
+    <string name="no_active_term_set">No active term has been set.</string>
+    <string name="term_marked_current">This is now your current term.</string>
+    <string name="current_term">Current Term</string>
+    <string name="term_name">Term Name: </string>
+    <string name="start_date">Start Date:  </string>
+    <string name="end_date">End Date: </string>
+    <string name="delete_all_terms">Delete all terms</string>
+    <string name="term_current">Make As Current Term</string>
+    <string name="edit_term">Edit term</string>
+    <string name="delete_term">Delete term</string>
+    <string name="term_delete_fail">Cannot delete if term contains any courses.</string>
+    <string name="confirm_delete_term">Are you sure you want to delete this term?</string>
+    <string name="save_term">Save Term</string>
+    <string name="add_new_term">Add New Term</string>
+    <string name="all_terms_deleted">All terms have been deleted</string>
+    <string name="confirm_delete_all_terms">Are you sure you want to delete all terms?</string>
+    <string name="term_viewer">Term Viewer</string>
+    <string name="term_editor">Term Editor</string>
+
+    <!--Courses Strings-->
+    <string name="edit_course">Edit course</string>
+    <string name="delete_course">Delete course</string>
+    <string name="start_course">Start course</string>
+    <string name="mark_course_completed">Mark course completed</string>
+    <string name="drop_course">Drop course</string>
+    <string name="confirm_delete_course">Are you sure you want to delete this course?</string>
+    <string name="add_new_course">Add New Course</string>
+    <string name="course_name">Course Name:</string>
+    <string name="course_start">Course Start:</string>
+    <string name="course_end">Course End:</string>
+    <string name="course_mentor">Course Mentor:</string>
+    <string name="course_mentor_phone">Course Mentor Phone:</string>
+    <string name="course_mentor_email">Course Mentor Email:</string>
+    <string name="save_course">Save Course</string>
+    <string name="courses">Courses</string>
+    <string name="course_list">Course List</string>
+    <string name="course_viewer">Course Viewer</string>
+    <string name="course_editor">Course Editor</string>
+    <string name="course_note_list">Course Note List</string>
+    <string name="view_courses">Current Course</string>
+    <string name="no_courses_in_progress">No Courses Are In Progress</string>
+    <string name="status">Status:</string>
+
+    <!--Assessments Strings-->
+    <string name="delete_assessment">Delete assessment</string>
+    <string name="confirm_delete_assessment">Are you sure you want to delete this assessment?</string>
+    <string name="new_assessment">New Assessment</string>
+    <string name="save_assessment">Save Assessment</string>
+    <string name="assessment_list">Assessment List</string>
+    <string name="assessment_viewer">Assessment Viewer</string>
+    <string name="assessment_editor">Assessment Editor</string>
+    <string name="view_assessments">Next Assessment</string>
+    <string name="edit_assessment">Edit assessment</string>
+
+    <!--Notes Strings-->
+    <string name="notes">Notes</string>
+    <string name="enter_new_note">Enter New Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="note_text_hint">Enter note text here…</string>
+    <string name="save_note">Save Note</string>
+    <string name="view_course_note">View Course Note</string>
+    <string name="view_assessment_note">View Assessment Note</string>
+    <string name="delete_note">Delete note</string>
+    <string name="share">Share…</string>
+    <string name="confirm_delete_note">Confirm Delete Note</string>
+    <string name="course_note_viewer">Course Note Viewer</string>
+    <string name="course_note_editor">Course Note Editor</string>
+    <string name="assessment_note_editor">Assessment Note Editor</string>
+    <string name="assessment_note_list">Assessment Note List</string>
+    <string name="assessment_note_viewer">Assessment Note Viewer</string>
+    <string name="code">Type</string>
+
+    <!--Misc Strings-->
+    <string name="name">Name</string>
+    <string name="date_time"><![CDATA[Date & Time]]></string>
+    <string name="description">Description</string>
+    <string name="delete_successful">Delete Successful</string>
+    <string name="edit">Edit </string>
+    <string name="added">Added</string>
+    <string name="update_successful">Update Successful</string>
+
+    <!--Notifications Strings-->
+    <string name="enable_notifications">Enable notifications</string>
+    <string name="disable_notifications">Disable notifications</string>
+</resources>

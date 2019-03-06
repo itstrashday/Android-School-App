@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities_term.TermViewerActivity">
+    <item
+        android:id="@+id/action_term_current"
+        android:orderInCategory="100"
+        android:title="@string/term_current"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_edit_term"
+        android:orderInCategory="101"
+        android:title="@string/edit_term"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_term"
+        android:orderInCategory="102"
+        android:title="@string/delete_term"
+        app:showAsAction="never" />
+</menu>
